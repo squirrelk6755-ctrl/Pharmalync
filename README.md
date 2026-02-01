@@ -1,20 +1,96 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# PharmaLync 💊🔗  
+**Secure Digital Prescription & Medicine Verification System**
 
-# Run and deploy your AI Studio app
+PharmaLync is a healthcare web application that replaces **paper-based prescriptions** with a **secure, digital, and verifiable workflow**, ensuring the **right patient gets the right medicine at the right time**.
 
-This contains everything you need to run your app locally.
+🔗 **Live Deployment:** https://pharmalync.onrender.com/
 
-View your app in AI Studio: https://ai.studio/apps/drive/176k_Y4tuuufYpNgHXDQ8nGlFsL0zWIbM
+---
 
-## Run Locally
+## 🚨 Problem
+Healthcare systems still rely heavily on **paper prescriptions** and **disconnected processes**, which leads to:
 
-**Prerequisites:**  Node.js
+- Prescription misuse, loss, and duplication  
+- Fake or expired medicines entering circulation  
+- No complete medicine history for patients  
+- Unsafe medicine collection for elderly patients  
+- Delays and confusion during emergencies  
 
+These gaps result in **medication errors, fraud, and lack of trust** in the healthcare ecosystem.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+---
+
+## 💡 Solution
+PharmaLync replaces physical prescriptions with a **secure digital workflow** connecting **doctors, patients, pharmacies, and caregivers**.
+
+### How it works:
+- Doctors issue **digital prescriptions** to verified patient profiles  
+  *(future-ready for Aadhaar / Gov-ID integration)*  
+- Patients can authorize **family members or caregivers** to collect medicines on their behalf  
+- Pharmacies dispense medicines only after **dual verification**:
+  - ✅ Patient / Caregiver QR Code  
+  - ✅ Medicine QR Code  
+- An **intelligent safety engine** checks:
+  - Misuse  
+  - Expiry  
+  - Dosage conflicts  
+- **Emergency Mode** allows instant medicine access while maintaining audit logs  
+
+✅ This ensures **accuracy, safety, and trust — without paper**.
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- React.js (Vite)
+- Tailwind CSS
+- QR Scanner (Web Camera API)
+
+### Backend
+- Node.js
+- Express.js
+- TypeScript
+- JWT Authentication
+- Role-Based Access Control (RBAC)
+
+### Database
+- PostgreSQL (Supabase) **or** MongoDB  
+  *(Stores prescriptions, scans, consent & audit logs)*
+
+### AI / Intelligence Layer
+- No external APIs
+- Rule-based safety engine for misuse detection
+
+### Deployment
+- Frontend: Vercel  
+- Backend: Render  
+
+---
+
+## ⭐ USP (Unique Selling Point)
+
+### PharmaLync vs Existing Solutions
+- Unified **digital prescription + secure verification**
+- **Dual QR verification** at pharmacy (patient + medicine)
+- Built-in **caregiver authorization**
+- **Emergency Mode** that never blocks treatment
+- Intelligent safety logic *(AI-based rules, no external APIs)*
+- Complete and auditable **medicine history**
+- Simple, scalable, and easy to deploy
+
+### Innovation Highlights
+- Dual-scan verification at pharmacy  
+- Caregiver-based medicine collection  
+- Emergency Mode with audit trail  
+- Intelligent safety engine (AI logic, no APIs)  
+- Future-ready for national integration  
+- PharmaLync doesn’t just digitize prescriptions —  
+  **it rebuilds trust in medicine delivery**
+
+---
+
+## 🧪 Run Locally
+```bash
+npm install
+npm run dev
