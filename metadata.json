@@ -1,0 +1,7 @@
+{
+  "name": "PharmaLync",
+  "description": "Secure Digital Prescription & Medicine Verification Platform for Doctors, Patients, and Pharmacies.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
